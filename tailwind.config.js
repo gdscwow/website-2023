@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       colors: {
         'blackish': '#6A6A6A',
+        'lightblack': 'rgb(49, 49, 49)',
         'translucent': 'rgba(1, 1, 1, 0.142)',
       },
       animation: {
@@ -17,7 +18,7 @@ module.exports = {
         preflight: false,
       },
       fontFamily: {
-        'GoogleSans': ['Google Sans', 'sans-serif', 'Helvetica', 'Arial'],
+        'GoogleSans': ['Google-Sans', 'sans-serif', 'Helvetica', 'Arial'],
       },
       backgroundImage: {
         'home': "url('/Assets/BG/home.png')",

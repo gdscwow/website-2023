@@ -10,21 +10,31 @@ import { AiOutlineInstagram, AiOutlineYoutube } from "react-icons/ai";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from 'react';
+import Head from 'next/head'
 
 export default function Home() {
   useEffect(() => {
     Aos.init({ duration: 450 });
   }, []);
   return (
-    <><div id="home" className='flex flex-col justify-center items-center min-w-screen min-h-screen font-GoogleSans'>
-      <Navbar />
-      <Hero />
-      <About />
-      <Team />
-      <Regions />
-      <Contact />
-    </div>
-      <footer className='h-96  min-w-screen p-16 bg-translucent grid grid-cols-3 gap-20'>
+    <>
+      <Head>
+        <title>WOW 2023</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/Assets/Images/Logo.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/Assets/Images/Logo.png" />
+        <meta name="description" content="Google Developers Student Clubs WOW 2023" />
+        <meta name="keywords" content="Google, Developers, Student, Club, WOW, wow, WoW, 2023, GDSC, Developers, Google Developers Student Clubs WOW 2023" />
+      </Head>
+      <div id="home" className='flex flex-col justify-center items-center min-w-screen min-h-screen font-GoogleSans'>
+        <Navbar />
+        <Hero />
+        <About />
+        <Team />
+        <Regions />
+        <Contact />
+      </div>
+      <footer className='h-96  min-w-screen p-16 bg-translucent grid grid-cols-3 gap-20 font-GoogleSans'>
         <div className='h-full w-full flex flex-col'>
           <Image src="/Assets/Images/Logo.png" className='animate-spin-slow' height={100} width={100} alt="wow" />
           <p className='mt-5 text-blackish text-2xl'>Google Developers Student Clubs<br />WOW 2023</p>
