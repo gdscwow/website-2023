@@ -24,9 +24,9 @@ export default function Navbar() {
                     smooth={true}
                     duration={300} >Regions</Link></li>
                 <li className="cursor-pointer hover:text-black transition ease-in-out duration-300"><Link activeClass="active"
-                    to="contact"
+                    to="sponsor"
                     smooth={true}
-                    duration={300} >Contact</Link></li>
+                    duration={300} >Sponsor Us</Link></li>
             </ul>
         </nav>
     )

@@ -10,6 +10,8 @@ module.exports = {
         'blackish': '#6A6A6A',
         'lightblack': 'rgb(49, 49, 49)',
         'translucent': 'rgba(1, 1, 1, 0.142)',
+        'pinkish': '#f582ae',
+        'navyblue': '#001858'
       },
       animation: {
         'spin-slow': 'spin 3s linear infinite',

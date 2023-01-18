@@ -3,10 +3,7 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "Google-Sans";
-    src: url("../public/Assets/Fonts/GoogleSans-Medium.ttf");
-  }
+  font-family: "Google-Sans";
+  src: url("../public/Assets/Fonts/GoogleSans-Medium.ttf");
+}
 
-/* .temp{
-    color: rgb(49, 49, 49)
-} */
