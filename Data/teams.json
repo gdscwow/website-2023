@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Management",
+        "src": "/Assets/Images/Team/management.jpg"
+    },
+    {
+        "name": "ER",
+        "src": "/Assets/Images/Team/ER.jpg"
+    },
+    {
+        "name": "Technical",
+        "src": "/Assets/Images/Team/technology.jpg"
+    },
+    {
+        "name": "content",
+        "src": "/Assets/Images/Team/content.jpg"
+    },
+    {
+        "name": "Sponsor",
+        "src": "/Assets/Images/Team/sponsor.jpg"
+    },
+    {
+        "name": "Design",
+        "src": "/Assets/Images/Team/design.jpg"
+    },
+    {
+        "name": "Mentors",
+        "src": "/Assets/Images/Team/mentor.jpg"
+    },
+    {
+        "name": "Leaders",
+        "src": "/Assets/Images/Team/management.jpg"
+    }
+]
