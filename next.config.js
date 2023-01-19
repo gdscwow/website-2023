@@ -2,6 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
+    domains: ['/'],
     loader: 'akamai',
     unoptimized: true,
     path: ""

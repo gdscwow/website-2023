@@ -12,11 +12,16 @@ import "aos/dist/aos.css";
 import { useEffect } from 'react';
 import Head from 'next/head'
 import { useRouter } from 'next/router'
+import firebase from '../src/services/firebase'
+import { getAnalytics } from "firebase/analytics";
+import { getPerformance } from "firebase/performance";
 
 export default function Home() {
-  const isLive = true;
+  const isLive = false;
   const router = useRouter();
   useEffect(() => {
+    getAnalytics(firebase);
+    getPerformance(firebase);
     Aos.init({ duration: 450 });
   }, []);
   if (isLive) {
@@ -77,7 +82,7 @@ export default function Home() {
                 to="regions"
                 smooth={true}
                 duration={300} >Regions</Link></li>
-              <li className="cursor-pointer hover:text-black transition ease-in-out duration-300"><Link activeClass="active"
+              <li className="mb-2 cursor-pointer hover:text-black transition ease-in-out duration-300"><Link activeClass="active"
                 to="sponsor"
                 smooth={true}
                 duration={300} >Sponsor Us</Link></li>
