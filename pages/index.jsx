@@ -11,9 +11,11 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from 'react';
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 
 export default function Home() {
   const isLive = true;
+  const router = useRouter();
   useEffect(() => {
     Aos.init({ duration: 450 });
   }, []);
@@ -79,6 +81,9 @@ export default function Home() {
                 to="sponsor"
                 smooth={true}
                 duration={300} >Sponsor Us</Link></li>
+              <li onClick={() => {
+                router.push('/privacy-policy')
+              }} className="cursor-pointer hover:text-black transition ease-in-out duration-300">Privacy Policy</li>
             </ul>
           </div>
           <div className='h-full w-full flex flex-col'>
