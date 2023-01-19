@@ -5,7 +5,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 export default function Hero() {
     return (
         <div className='w-full h-screen flex justify-center items-center bg-home bg-cover'>
-            <Image src="/Assets/Images/Heronoo.svg" width={650} height={500} alt="logo" />
+            <Image src="/Assets/Images/heronoo.svg" width={650} height={500} alt="logo" />
             <Image src="/Assets/Images/circle.svg" className='absolute animate-spin-slow' width={220} height={220} alt="logo" />
             <Link to="about"
                 smooth={true}
