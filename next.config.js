@@ -1,14 +1,22 @@
 /** @type {import('next').NextConfig} */
+
+const withPWA = require("next-pwa")({
+  dest: "public",
+  disable: process.env.NODE_ENV === "development",
+  register: true,
+  skipWaiting: true,
+});
+
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['/'],
-    loader: 'akamai',
+    domains: ["/"],
+    loader: "akamai",
     unoptimized: true,
-    path: ""
+    path: '',
   },
-  basePath: "",
-  assetPrefix: "",
-}
+  basePath: '',
+  assetPrefix: '',
+};
 
-module.exports = nextConfig
+module.exports = withPWA(nextConfig);

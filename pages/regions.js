@@ -5,8 +5,8 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 
 const Regions = ({ regions, india }) => {
-  const router = useRouter();
   const [region, setRegion] = useState(null);
+  const router = useRouter();
   return (
     <div className="flex gap-28 justify-center items-center h-screen w-screen">
       <div

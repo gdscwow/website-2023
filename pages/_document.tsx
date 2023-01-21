@@ -8,7 +8,7 @@ export default function Document() {
       <body>
         <div
           id="globalLoader"
-          className="h-screen w-screen flex-col flex justify-evenly items-center"
+          className="h-screen w-screen flex-col z-50 flex justify-evenly items-center"
         >
           <Image
             src="/Assets/Images/circle.svg"

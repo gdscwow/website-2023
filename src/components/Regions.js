@@ -2,6 +2,7 @@ import Image from "next/image";
 import { RxCross1 } from "react-icons/rx";
 import { useRef, useState, useEffect } from "react";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 export default function Regions() {
   const router = useRouter();
@@ -69,14 +70,14 @@ export default function Regions() {
                 Take me to {region}&apos;s page!
               </p>
             </div>
-            <div onClick={() => {
-              router.push("/regions");
-            }} className="active:scale-95 transition-all flex flex-col justify-center items-center w-80 h-28 text-center select-none cursor-pointer rounded-3xl bg-pinkish">
-              <p className="text-3xl text-white">
-                View all <br />
-                Region&apos;s!
-              </p>
-            </div>
+            <Link href="/regions">
+              <div className="active:scale-95 transition-all flex flex-col justify-center items-center w-80 h-28 text-center select-none cursor-pointer rounded-3xl bg-pinkish">
+                <p className="text-3xl text-white">
+                  View all <br />
+                  Region&apos;s!
+                </p>
+              </div>
+            </Link>
           </div>
         </div>
       </div>
