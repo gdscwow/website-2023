@@ -24,10 +24,15 @@ const Regions = ({ regions, india }) => {
         />
         <p className="text-xl text-blackish">Go home</p>
       </div>
-      <div style={{ width: 35 + "%" }} className="w-2/3">
+      <div style={{ width: 35 + "%" }} className="fixed left-48 w-2/3">
         <SVGMap
-          onLocationFocus={(event) => {
+          onLocationMouseOver={(event) => {
+            const currentState = event.target
             const location = event.target.getAttribute("name");
+            currentState.parentNode.childNodes.forEach((state) => {
+              state.classList.remove("active-state")
+            })
+            currentState.classList.add("active-state")
             console.log(location);
             regions.forEach((item) => {
               if (item.name === location) {
@@ -38,7 +43,7 @@ const Regions = ({ regions, india }) => {
           map={india}
         />
       </div>
-      <div className="flex flex-col h-full justify-center items-center text-center w-auto">
+      <div className="fixed right-28 flex flex-col h-full justify-center items-center text-center w-auto">
         <h1 className="text-4xl mb-16 text-blackish">Click your region :)</h1>
         {region && region !== null ? (
           <h1 className="flex text-4xl text-blackish">

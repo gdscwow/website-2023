@@ -20,3 +20,9 @@
 }
 
 
+path.active-state{
+  fill: rgb(94, 255, 0) !important;
+  transition: all;
+  transition-duration: 500ms;
+  scale: 0.99;
+}

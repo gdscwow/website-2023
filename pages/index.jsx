@@ -63,7 +63,7 @@ export default function Home() {
         </div>
         <footer className='h-96  min-w-screen p-16 bg-translucent grid grid-cols-3 gap-20 font-GoogleSans'>
           <div className='h-full w-full flex flex-col'>
-            <Image src="/Assets/Images/Logo.png" className='animate-spin-slow' height={100} width={100} alt="wow" />
+            <Image loading='lazy' src="/Assets/Images/Logo.png" className='animate-spin-slow' height={100} width={100} alt="wow" />
             <p className='mt-5 text-blackish text-2xl'>Google Developers Student Clubs<br />WOW 2023</p>
             <a href='mailto:eamil@gmail.com' className='mt-5 text-blackish text-2xl'>email@gmail.com</a>
           </div>
