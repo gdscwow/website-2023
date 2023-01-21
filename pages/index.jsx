@@ -7,8 +7,6 @@ import Regions from '../src/components/Regions'
 import Contact from '../src/components/Contact'
 import { Link, animateScroll as scroll } from "react-scroll";
 import { AiOutlineInstagram, AiOutlineYoutube } from "react-icons/ai";
-import Aos from "aos";
-import "aos/dist/aos.css";
 import { useEffect } from 'react';
 import Head from 'next/head'
 import { useRouter } from 'next/router'
@@ -22,7 +20,6 @@ export default function Home() {
   useEffect(() => {
     getAnalytics(firebase);
     getPerformance(firebase);
-    Aos.init({ duration: 450 });
   }, []);
   if (isLive) {
     return (
