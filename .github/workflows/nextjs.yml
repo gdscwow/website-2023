@@ -25,7 +25,8 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
-      - run: npm ci --force
+      - run: npm ci --force --legacy-peer-deps
+      - run: npm audit fix --force
       - run: npm run build
       - run: npm run export
       - run: touch ./out/.nojekyll
