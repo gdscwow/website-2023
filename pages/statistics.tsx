@@ -1,13 +1,14 @@
 import AnimatedNumberCounter from "../src/components/AnimatedNumberCounter";
 import PieChart from "../src/components/Charts/PieChart";
 import axios from "axios";
-
+import { useRouter } from "next/router";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import { groupBy } from "../src/utils/methods";
 
 const Statistics: NextPage = ({ collabData, speakersData }: any) => {
+  const router = useRouter();
   return (
     <div className="statistics snap-mandatory snap-y scroll-smooth">
       <Head>
@@ -15,10 +16,24 @@ const Statistics: NextPage = ({ collabData, speakersData }: any) => {
         <link rel="icon" href="/favicon.ico" />
         <link rel="manifest" href="/manifest.json" />
       </Head>
-
       <main>
+      <div
+        className="cursor-pointer absolute top-5 left-3 flex gap-2 justify-center items-center"
+        onClick={() => {
+          router.push("/");
+        }}
+      >
+        <Image
+          src="/Assets/Images/circle.svg"
+          height={70}
+          className="animate-spin-slow hover:animate-bounce transition-all"
+          width={70}
+          alt="wow"
+        />
+        <p className="text-xl text-blackish">Go home</p>
+      </div>
         <div className="columns-1 snap-center flex flex-col items-center justify-center min-h-screen w-full">
-          <h1 className="text-5xl mb-5 py-4 font-light">
+          {/* <h1 className="text-5xl mb-5 py-4 font-light">
             Google Developer Student Clubs
           </h1>
           <Image
@@ -26,7 +41,22 @@ const Statistics: NextPage = ({ collabData, speakersData }: any) => {
             alt="GDSC WOW Logo"
             width={500}
             height={200}
-          />
+          /> */}
+          <div className="flex flex-col w-screen justify-center items-center">
+            <Image
+              src="/Assets/Images/heronoo.svg"
+              width={650}
+              height={500}
+              alt="logo"
+            />
+            <Image
+              src="/Assets/Images/circle.svg"
+              className="absolute animate-spin-slow"
+              width={220}
+              height={220}
+              alt="logo"
+            />
+          </div>
           <h1 className="text-5xl py-4 mb-16 font-extrabold text-slate-900">
             Statistics
           </h1>
