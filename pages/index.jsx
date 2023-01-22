@@ -7,7 +7,7 @@ import Regions from '../src/components/Regions'
 import Contact from '../src/components/Contact'
 import { Link, animateScroll as scroll } from "react-scroll";
 import { AiOutlineInstagram, AiOutlineYoutube } from "react-icons/ai";
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import firebase from '../src/services/firebase'
@@ -18,6 +18,19 @@ export default function Home() {
   const isLive = false;
   const router = useRouter();
   useEffect(() => {
+    if('pictureInPictureEnabled' in document) {
+      window.addEventListener('click', async () => {
+        console.log('click')
+        const video = document.getElementById('video');
+        if (video !== null) {
+          try {
+            await video.requestPictureInPicture();
+          } catch (error) {
+            console.log(error);
+          }
+        }
+      })
+    }
     getAnalytics(firebase);
     getPerformance(firebase);
   }, []);
@@ -50,6 +63,9 @@ export default function Home() {
           <meta name="description" content="Google Developers Student Clubs WOW 2023" />
           <meta name="keywords" content="Google, Developers, Student, Club, WOW, wow, WoW, 2023, GDSC, Developers, Google Developers Student Clubs WOW 2023" />
         </Head>
+        <div className='-z-40 hidden'>
+          <video src='https://github.com/gdscwow/Data-23/blob/main/Meet%20GDSC%20WOW%20-%20The%20Student%20Driven%20Event%20of%20the%20Year.mp4?raw=true' autoPlay id='video' controls></video>
+        </div>
         <div id="home" className='flex flex-col justify-center items-center min-w-screen min-h-screen font-GoogleSans'>
           <Navbar />
           <Hero />
