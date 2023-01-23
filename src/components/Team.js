@@ -3,14 +3,6 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export default function Team() {
-  const [team, setTeam] = useState([]);
-  useEffect(() => {
-    fetch("/Data/teams.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setTeam(data);
-      });
-  }, []);
   return (
     <div
       id="team"
@@ -24,24 +16,24 @@ export default function Team() {
         <p className="text-red-500">e</p>
         <p className="text-green-500">a</p>
         <p className="text-yellow-500">m</p>
-        <p className="text-yellow-700">s</p>
       </h1>
       <div
         style={{ height: 70 + "vh" }}
-        className="min-w-full gap-10 p-10 grid grid-cols-4 place-items-center"
+        className="min-w-full gap-10 p-10 grid grid-cols-2 place-items-center"
       >
-        {team.length > 0
-          ? team.map((member, index) => {
-              return (
-                <div
-                  key={index}
-                  className={`w-full cursor-pointer bg-gray-400 hover:scale-110 h-full rounded-xl transition-all bg-cover bg-opacity-70 flex justify-center items-center text-4xl text-lightblack`}
-                >
-                  <p>{member.name}</p>
-                </div>
-              );
-            })
-          : null}
+        <div className="flex flex-col">
+          <h1 className="text-6xl font-semibold text-lightblack">
+            More than 200+ GDSC&apos;s <br />
+            came together for
+          </h1>
+          <Image src="Assets/Images/wow.svg" height={300} width={300} alt="WoW"/>
+        </div>
+        <Image
+          src="https://github.com/gdscwow/Data-23/blob/main/clip-brainstorm.gif?raw=true"
+          height={400}
+          width={400}
+          alt="GIF"
+        />
       </div>
     </div>
   );

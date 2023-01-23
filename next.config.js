@@ -10,7 +10,7 @@ const withPWA = require("next-pwa")({
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["/"],
+    domains: ["github.com"],
     loader: "akamai",
     unoptimized: true,
     path: '',

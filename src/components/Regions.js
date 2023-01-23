@@ -20,7 +20,6 @@ export default function Regions() {
       )
         .then((res) => res.json())
         .then((data) => {
-          // console.log(data);
           fetch("/Data/regions.json")
             .then((res) => res.json())
             .then((datas) => {

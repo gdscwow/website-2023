@@ -33,7 +33,6 @@ const Regions = ({ regions, india }) => {
               state.classList.remove("active-state")
             })
             currentState.classList.add("active-state")
-            console.log(location);
             regions.forEach((item) => {
               if (item.name === location) {
                 setRegion(item.name);

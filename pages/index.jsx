@@ -20,7 +20,6 @@ export default function Home() {
   useEffect(() => {
     if('pictureInPictureEnabled' in document) {
       window.addEventListener('click', async () => {
-        console.log('click')
         const video = document.getElementById('video');
         if (video !== null) {
           try {
@@ -33,6 +32,13 @@ export default function Home() {
     }
     getAnalytics(firebase);
     getPerformance(firebase);
+    // if picture in picture is closed
+    return document.addEventListener('leavepictureinpicture', () => {
+      const video = document.getElementById('video');
+      if(video !== null) {
+        video.remove();
+      }
+    })
   }, []);
   if (isLive) {
     return (
@@ -63,9 +69,9 @@ export default function Home() {
           <meta name="description" content="Google Developers Student Clubs WOW 2023" />
           <meta name="keywords" content="Google, Developers, Student, Club, WOW, wow, WoW, 2023, GDSC, Developers, Google Developers Student Clubs WOW 2023" />
         </Head>
-        <div className='-z-40 hidden'>
+        {/* <div className='-z-40 hidden'>
           <video src='https://github.com/gdscwow/Data-23/blob/main/Meet%20GDSC%20WOW%20-%20The%20Student%20Driven%20Event%20of%20the%20Year.mp4?raw=true' autoPlay id='video' controls></video>
-        </div>
+        </div> */}
         <div id="home" className='flex flex-col justify-center items-center min-w-screen min-h-screen font-GoogleSans'>
           <Navbar />
           <Hero />
