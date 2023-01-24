@@ -89,14 +89,14 @@ export default function Regions() {
       id="regions"
       className="min-h-screen min-w-screen flex flex-col justify-center items-center"
     >
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col">
         <p
           data-aos="fade-up"
-          className="font-GoogleSans flex text-6xl text-blackish text-semibold"
+          className="font-GoogleSans flex text-6xl text-blackish text-semibold max-md:text-2xl max-md:text-center"
         >
-          Can&apos;t find{" "}
+          Can&apos;t find<br/>{" "}
           <Image
-            className="mr-3 ml-3 "
+            className="max-md:h-16 max-md:w-16 max-md:mr-2 max-md:ml-2 mr-3 ml-3 "
             src="Assets/Images/wow.svg"
             height={120}
             width={120}

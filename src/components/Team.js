@@ -10,7 +10,7 @@ export default function Team() {
     >
       <h1
         data-aos="fade-up"
-        className="text-6xl mt-20 font-semibold flex text-blackish"
+        className="max-md:text-5xl text-6xl mt-20 font-semibold flex text-blackish"
       >
         Our <p className="ml-5 text-blue-500">T</p>
         <p className="text-red-500">e</p>
@@ -19,10 +19,10 @@ export default function Team() {
       </h1>
       <div
         style={{ height: 70 + "vh" }}
-        className="min-w-full gap-10 p-10 grid grid-cols-2 place-items-center"
+        className="max-md:p-5 max-md:flex max-md:text-center max-md:gap-5 min-w-full gap-10 p-10 grid grid-cols-2 place-items-center"
       >
         <div className="flex flex-col">
-          <h1 className="text-6xl font-semibold text-lightblack">
+          <h1 className="max-md:text-3xl max-md:mb-0 text-6xl mb-10 font-semibold text-lightblack">
             More than 200+ GDSC&apos;s <br />
             came together for
           </h1>
@@ -31,6 +31,7 @@ export default function Team() {
         <Image
           src="https://github.com/gdscwow/Data-23/blob/main/clip-brainstorm.gif?raw=true"
           height={400}
+          className="max-md:hidden"
           width={400}
           alt="GIF"
         />
