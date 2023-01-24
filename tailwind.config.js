@@ -14,7 +14,7 @@ module.exports = {
         navyblue: "#001858",
       },
       animation: {
-        "spin-slow": "spin 3s linear infinite",
+        "spin-slow": "spin 5s linear infinite",
       },
       corePlugins: {
         preflight: false,
