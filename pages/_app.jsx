@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import NProgress from "nprogress";
 import "nprogress/nprogress.css";
 import Router from "next/router";
-import { CustomCursor } from "react-svg-cursor";
 
 Router.events.on("routeChangeStart", () => {
   const loader = document.getElementById("globalLoader");
@@ -27,12 +26,6 @@ export default function App({ Component, pageProps }) {
     }
   }, []);
   return (
-    <><CustomCursor
-      component={"/Assets/Images/circle.svg"}
-      width={40}
-      height={40}
-      isDisabled={isShown}
-      zIndex={420}
-      transform="translate(-32%, -10%) rotateZ(0deg)" /><Component {...pageProps} /></>
+    <Component {...pageProps} />
   );
 }

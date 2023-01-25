@@ -26,10 +26,10 @@ export default function Team() {
             More than 200+ GDSC&apos;s <br />
             came together for
           </h1>
-          <Image src="Assets/Images/wow.svg" height={300} width={300} alt="WoW"/>
+          <Image src="/Assets/Images/wow.svg" height={300} width={300} alt="WoW"/>
         </div>
         <Image
-          src="https://github.com/gdscwow/Data-23/blob/main/clip-brainstorm.gif?raw=true"
+          src="https://raw.githubusercontent.com/gdscwow/Data-23/main/clip-brainstorm.gif"
           height={400}
           className="max-md:hidden"
           width={400}
