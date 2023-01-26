@@ -1,16 +1,12 @@
-import Head from 'next/head';
+import SEO from '../src/components/SEO';
 
 export default function privacypolicy() {
     return (
         <>
-            <Head>
-                <title>WOW 2023 | Privacy Policy</title>
-                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-                <link rel="apple-touch-icon" sizes="180x180" href="/Assets/Images/Logo.png" />
-                <link rel="icon" type="image/png" sizes="32x32" href="/Assets/Images/Logo.png" />
-                <meta name="description" content="Google Developers Student Clubs WOW 2023" />
-                <meta name="keywords" content="Google, Developers, Student, Club, WOW, wow, WoW, 2023, GDSC, Developers, Google Developers Student Clubs WOW 2023" />
-            </Head>
+            <SEO 
+                title='Privacy Policy | WOW 2023'
+                description='Google Developers Student Clubs WOW 2023 Privacy Policy'
+            />
             <strong>Privacy Policy</strong> <p>
                 gdscwow built the GDSC WoW app as
                 a Free app. This SERVICE is provided by
