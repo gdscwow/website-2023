@@ -8,11 +8,11 @@ import Contact from '../src/components/Contact'
 import { Link, animateScroll as scroll } from "react-scroll";
 import { AiOutlineInstagram, AiOutlineYoutube } from "react-icons/ai";
 import { useEffect, useState } from 'react';
-import Head from 'next/head'
 import { useRouter } from 'next/router'
 import firebase from '../src/services/firebase'
 import { getAnalytics } from "firebase/analytics";
 import { getPerformance } from "firebase/performance";
+import SEO from '../src/components/SEO'
 
 export default function Home() {
   const [isMobile, setisMobile] = useState(false);
@@ -47,14 +47,7 @@ export default function Home() {
   if (isLive) {
     return (
       <>
-        <Head>
-          <title>WOW 2023</title>
-          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-          <link rel="apple-touch-icon" sizes="180x180" href="/Assets/Images/Logo.png" />
-          <link rel="icon" type="image/png" sizes="32x32" href="/Assets/Images/Logo.png" />
-          <meta name="description" content="Google Developers Student Clubs WOW 2023" />
-          <meta name="keywords" content="Google, Developers, Student, Club, WOW, wow, WoW, 2023, GDSC, Developers, Google Developers Student Clubs WOW 2023" />
-        </Head>
+        <SEO />
         <div id="home" className='flex flex-col justify-evenly items-center min-w-screen min-h-screen font-GoogleSans'>
           <Image src="/Assets/Images/circle.svg" className='animate-spin-slow' width={220} height={220} alt="logo" />
           <h1 className='text-5xl text-center text-blackish'>Something is still cooking 🍳<br /><p className='text-3xl'>Thoda sabhar rakhe!</p></h1>
@@ -65,14 +58,7 @@ export default function Home() {
   else {
     return (
       <>
-        <Head>
-          <title>WOW 2023</title>
-          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-          <link rel="apple-touch-icon" sizes="180x180" href="/Assets/Images/Logo.png" />
-          <link rel="icon" type="image/png" sizes="32x32" href="/Assets/Images/Logo.png" />
-          <meta name="description" content="Google Developers Student Clubs WOW 2023" />
-          <meta name="keywords" content="Google, Developers, Student, Club, WOW, wow, WoW, 2023, GDSC, Developers, Google Developers Student Clubs WOW 2023" />
-        </Head>
+         <SEO />
         {!isMobile ? <div className='-z-40 hidden'>
           <video src='https://github.com/gdscwow/Data-23/blob/main/Meet%20GDSC%20WOW%20-%20The%20Student%20Driven%20Event%20of%20the%20Year.mp4?raw=true' autoPlay id='video' controls></video>
         </div> : null}
