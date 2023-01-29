@@ -1,11 +1,8 @@
 import Image from "next/image";
-import { RxCross1 } from "react-icons/rx";
 import { useRef, useState, useEffect } from "react";
-import { useRouter } from "next/router";
 import Link from "next/link";
 
 export default function Regions() {
-  const router = useRouter();
   const [permissions, setPermissions] = useState(false);
   const [shown, isShown] = useState(false);
   const [region, setRegion] = useState("");
@@ -49,7 +46,7 @@ export default function Regions() {
         <div className="flex flex-col justify-center items-center">
           <p
             data-aos="fade-up"
-            className="font-GoogleSans flex text-6xl text-blackish text-semibold"
+            className="max-md:text-4xl font-GoogleSans flex text-6xl text-blackish text-semibold"
           >
             {region} have{" "}
             <Image
@@ -62,7 +59,7 @@ export default function Regions() {
             near you 😁
           </p>
           <div className="flex justify-center items-center gap-10 mt-36">
-          <Link href="/regions">
+            <Link href="/regions">
               <div className="active:scale-95 transition-all flex flex-col justify-center items-center w-80 h-28 text-center select-none cursor-pointer rounded-3xl bg-pinkish">
                 <p className="text-3xl text-white">
                   Take me to <br />
@@ -94,7 +91,8 @@ export default function Regions() {
           data-aos="fade-up"
           className="font-GoogleSans flex text-6xl text-blackish text-semibold max-md:text-2xl max-md:text-center"
         >
-          Can&apos;t find<br/>{" "}
+          Can&apos;t find
+          <br />{" "}
           <Image
             className="max-md:h-16 max-md:w-16 max-md:mr-2 max-md:ml-2 mr-3 ml-3 "
             src="Assets/Images/wow.svg"

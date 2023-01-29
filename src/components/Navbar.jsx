@@ -11,7 +11,7 @@ export default function Navbar() {
     }
     return (
         <>
-            <div style={{ zIndex: '49' }} className="w-screen h-96 hidden bg-black" id="contextmenu">
+            <div style={{transform: 'translate(-50%, -50%)'}} className="fixed z-50 top-44 left-1/2 w-screen h-96 hidden bg-black" id="contextmenu">
                 <ul className="h-full w-full flex justify-center flex-col items-center text-blackish text-2xl">
                     <li className="cursor-pointer transition ease-in-out duration-300">
                         <Link activeClass="active" to="about" smooth={true} duration={300}>

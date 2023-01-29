@@ -14,6 +14,7 @@ import { getAnalytics } from "firebase/analytics";
 import { getPerformance } from "firebase/performance";
 import SEO from '../src/components/SEO'
 
+
 export default function Home() {
   const [isMobile, setisMobile] = useState(false);
   const isLive = false;
