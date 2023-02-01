@@ -30,9 +30,7 @@ export default function Faq({ data }) {
                       <span className="text-2xl text-blackish font-semibold">
                         {item.question}
                       </span>
-                      <span id="icons">
-                        <AiFillCaretDown className="text-2xl text-blackish" />
-                      </span>
+                        <AiFillCaretDown id="icons" className="text-2xl text-blackish" />
                     </div>
                     <div
                       id="content"
