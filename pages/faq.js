@@ -1,7 +1,7 @@
 import { AiFillCaretDown } from "react-icons/ai";
 import Navbar from "../src/components/faq/Navbar";
 
-export default function Faq({ data }) {
+const Faq = ({ data }) => {
   return (
     <div className="select-none min-h-screen w-screen">
       <Navbar />
@@ -47,6 +47,8 @@ export default function Faq({ data }) {
     </div>
   );
 }
+
+export default Faq;
 
 // get server side props
 export async function getServerSideProps() {
