@@ -1,7 +1,16 @@
 import { AiFillCaretDown } from "react-icons/ai";
 import Navbar from "../src/components/faq/Navbar";
+import { useEffect, useState } from "react";
 
-const Faq = ({ data }) => {
+const Faq = () => {
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    fetch(
+      "https://raw.githubusercontent.com/gdscwow/Data-23/main/json/faq.json"
+    )
+      .then((res) => res.json())
+      .then((data) => setData(data));
+  }, []);
   return (
     <div className="select-none min-h-screen w-screen">
       <Navbar />
@@ -30,7 +39,10 @@ const Faq = ({ data }) => {
                       <span className="text-2xl text-blackish font-semibold">
                         {item.question}
                       </span>
-                        <AiFillCaretDown id="icons" className="text-2xl text-blackish" />
+                      <AiFillCaretDown
+                        id="icons"
+                        className="text-2xl text-blackish"
+                      />
                     </div>
                     <div
                       id="content"
@@ -46,20 +58,6 @@ const Faq = ({ data }) => {
       </div>
     </div>
   );
-}
+};
 
 export default Faq;
-
-// get server side props
-export async function getServerSideProps() {
-  const res = await fetch(
-    "https://raw.githubusercontent.com/gdscwow/Data-23/main/json/faq.json"
-  );
-  const data = await res.json();
-
-  return {
-    props: {
-      data,
-    },
-  };
-}
