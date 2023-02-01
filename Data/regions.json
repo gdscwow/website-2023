@@ -1,38 +1,322 @@
 [
     {
-        "name": "Gujarat"
+        "name": "Gujarat",
+        "homepage": "/[gujarat]",
+        "where": [
+            {
+                "where": "Ahmedabad - Gandhinagar",
+                "at": "PDEU - Pandit Deendayal Energy University",
+                "date": "",
+                "link": "/"
+            }
+           
+        ],
+        "sponsor": {
+            "1": {
+                "name": "PDEU",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f1/Pandit_Deendayal_Energy_University_logo.png/220px-Pandit_Deendayal_Energy_University_logo.png"
+            }
+        },
+        "hero": "https://raw.githubusercontent.com/gdscwow/Data-23/main/RegionImages/Frame%2030.svg"
     },
     {
-        "name": "Maharashtra"
+        "name": "Maharashtra",
+        "homepage": "/[maharashtra]",
+        "where": {
+            "1": {
+                "where": "Ahmedabad - Gandhinagar",
+                "at": "PDEU - Pandit Deendayal Energy University",
+                "date": "",
+                "link": "/"
+            },
+            "2": {
+                "where": "Ahmedabad - Gandhinagar",
+                "at": "PDEU - Pandit Deendayal Energy University",
+                "date": "",
+                "link": "/"
+            }
+        },
+        "sponsor": {
+            "1": {
+                "name": "PDEU",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f1/Pandit_Deendayal_Energy_University_logo.png/220px-Pandit_Deendayal_Energy_University_logo.png"
+            }
+        },
+        "hero": "https://raw.githubusercontent.com/gdscwow/Data-23/main/RegionImages/Frame%2030.svg"
     },
     {
-        "name": "Rajasthan"
+        "name": "Rajasthan",
+        "homepage": "/[rajasthan]",
+        "where": {
+            "1": {
+                "where": "Ahmedabad - Gandhinagar",
+                "at": "PDEU - Pandit Deendayal Energy University",
+                "date": "",
+                "link": "/"
+            },
+            "2": {
+                "where": "Surat - Gandhinagar",
+                "at": "PDEU - Pandit Deendayal Energy University",
+                "date": "",
+                "link": "/"
+            }
+        },
+        "sponsor": {
+            "1": {
+                "name": "PDEU",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f1/Pandit_Deendayal_Energy_University_logo.png/220px-Pandit_Deendayal_Energy_University_logo.png"
+            }
+        },
+        "hero": "https://raw.githubusercontent.com/gdscwow/Data-23/main/RegionImages/Frame%2030.svg"
     },
     {
-        "name": "Punjab"
+        "name": "Punjab",
+        "homepage": "/[punjab]",
+        "where": {
+            "1": {
+                "where": "Ahmedabad - Gandhinagar",
+                "at": "PDEU - Pandit Deendayal Energy University",
+                "date": "",
+                "link": "/"
+            },
+            "2": {
+                "where": "Ahmedabad - Gandhinagar",
+                "at": "PDEU - Pandit Deendayal Energy University",
+                "date": "",
+                "link": "/"
+            }
+        },
+        "sponsor": {
+            "1": {
+                "name": "PDEU",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f1/Pandit_Deendayal_Energy_University_logo.png/220px-Pandit_Deendayal_Energy_University_logo.png"
+            }
+        },
+        "hero": "https://raw.githubusercontent.com/gdscwow/Data-23/main/RegionImages/Frame%2030.svg"
     },
     {
-        "name": "Madhya Pradesh"
+        "name": "Madhya Pradesh",
+        "homepage": "/[madhya-pradesh]",
+        "where": {
+            "1": {
+                "where": "Ahmedabad - Gandhinagar",
+                "at": "PDEU - Pandit Deendayal Energy University",
+                "date": "",
+                "link": "/"
+            },
+            "2": {
+                "where": "Ahmedabad - Gandhinagar",
+                "at": "PDEU - Pandit Deendayal Energy University",
+                "date": "",
+                "link": "/"
+            }
+        },
+        "sponsor": {
+            "1": {
+                "name": "PDEU",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f1/Pandit_Deendayal_Energy_University_logo.png/220px-Pandit_Deendayal_Energy_University_logo.png"
+            }
+        },
+        "hero": "https://raw.githubusercontent.com/gdscwow/Data-23/main/RegionImages/Frame%2030.svg"
     },
     {
-        "name": "Karnataka"
+        "name": "Karnataka",
+        "homepage": "/[karnataka]",
+        "where": {
+            "1": {
+                "where": "Ahmedabad - Gandhinagar",
+                "at": "PDEU - Pandit Deendayal Energy University",
+                "date": "",
+                "link": "/"
+            },
+            "2": {
+                "where": "Ahmedabad - Gandhinagar",
+                "at": "PDEU - Pandit Deendayal Energy University",
+                "date": "",
+                "link": "/"
+            }
+        },
+        "sponsor": {
+            "1": {
+                "name": "PDEU",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f1/Pandit_Deendayal_Energy_University_logo.png/220px-Pandit_Deendayal_Energy_University_logo.png"
+            }
+        },
+        "hero": "https://raw.githubusercontent.com/gdscwow/Data-23/main/RegionImages/Frame%2030.svg"
     },
     {
-        "name": "Tamil Nadu"
+        "name": "Tamil Nadu",
+        "homepage": "/[tamil-nadu]",
+        "where": {
+            "1": {
+                "where": "Ahmedabad - Gandhinagar",
+                "at": "PDEU - Pandit Deendayal Energy University",
+                "date": "",
+                "link": "/"
+            },
+            "2": {
+                "where": "Ahmedabad - Gandhinagar",
+                "at": "PDEU - Pandit Deendayal Energy University",
+                "date": "",
+                "link": "/"
+            }
+        },
+        "sponsor": {
+            "1": {
+                "name": "PDEU",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f1/Pandit_Deendayal_Energy_University_logo.png/220px-Pandit_Deendayal_Energy_University_logo.png"
+            }
+        },
+        "hero": "https://raw.githubusercontent.com/gdscwow/Data-23/main/RegionImages/Frame%2030.svg"
     },
     {
-        "name": "Kerela"
+        "name": "Kerela",
+        "homepage": "/[kerela]",
+        "where": {
+            "1": {
+                "where": "Ahmedabad - Gandhinagar",
+                "at": "PDEU - Pandit Deendayal Energy University",
+                "date": "",
+                "link": "/"
+            },
+            "2": {
+                "where": "Ahmedabad - Gandhinagar",
+                "at": "PDEU - Pandit Deendayal Energy University",
+                "date": "",
+                "link": "/"
+            }
+        },
+        "sponsor": {
+            "1": {
+                "name": "PDEU",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f1/Pandit_Deendayal_Energy_University_logo.png/220px-Pandit_Deendayal_Energy_University_logo.png"
+            }
+        },
+        "hero": "https://raw.githubusercontent.com/gdscwow/Data-23/main/RegionImages/Frame%2030.svg"
     },
     {
-        "name": "Delhi"
+        "name": "Delhi",
+        "homepage": "/[delhi]",
+        "where": {
+            "1": {
+                "where": "Ahmedabad - Gandhinagar",
+                "at": "PDEU - Pandit Deendayal Energy University",
+                "date": "",
+                "link": "/"
+            },
+            "2": {
+                "where": "Ahmedabad - Gandhinagar",
+                "at": "PDEU - Pandit Deendayal Energy University",
+                "date": "",
+                "link": "/"
+            }
+        },
+        "sponsor": {
+            "1": {
+                "name": "PDEU",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f1/Pandit_Deendayal_Energy_University_logo.png/220px-Pandit_Deendayal_Energy_University_logo.png"
+            }
+        },
+        "hero": "https://raw.githubusercontent.com/gdscwow/Data-23/main/RegionImages/Frame%2030.svg"
     },
     {
-        "name": "Odisha"
+        "name": "Odisha",
+        "homepage": "/[odisha]",
+        "where": {
+            "1": {
+                "where": "Ahmedabad - Gandhinagar",
+                "at": "PDEU - Pandit Deendayal Energy University",
+                "date": "",
+                "link": "/"
+            },
+            "2": {
+                "where": "Ahmedabad - Gandhinagar",
+                "at": "PDEU - Pandit Deendayal Energy University",
+                "date": "",
+                "link": "/"
+            }
+        },
+        "sponsor": {
+            "1": {
+                "name": "PDEU",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f1/Pandit_Deendayal_Energy_University_logo.png/220px-Pandit_Deendayal_Energy_University_logo.png"
+            }
+        },
+        "hero": "https://raw.githubusercontent.com/gdscwow/Data-23/main/RegionImages/Frame%2030.svg"
     },
     {
-        "name": "Assam"
+        "name": "Assam",
+        "homepage": "/[assam]",
+        "where": {
+            "1": {
+                "where": "Ahmedabad - Gandhinagar",
+                "at": "PDEU - Pandit Deendayal Energy University",
+                "date": "",
+                "link": "/"
+            },
+            "2": {
+                "where": "Ahmedabad - Gandhinagar",
+                "at": "PDEU - Pandit Deendayal Energy University",
+                "date": "",
+                "link": "/"
+            }
+        },
+        "sponsor": {
+            "1": {
+                "name": "PDEU",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f1/Pandit_Deendayal_Energy_University_logo.png/220px-Pandit_Deendayal_Energy_University_logo.png"
+            }
+        },
+        "hero": "https://raw.githubusercontent.com/gdscwow/Data-23/main/RegionImages/Frame%2030.svg"
     },
     {
-        "name": "Chattisgarh"
+        "name": "Chattisgarh",
+        "homepage": "/[chattisgarh]",
+        "where": [
+            {
+                "name": "Ahmedabad - Gandhinagar",
+                "at": "PDEU - Pandit Deendayal Energy University",
+                "date": "",
+                "link": "/"
+            },
+            {
+                "name": "Ahmedabad - Gandhinagar",
+                "at": "PDEU - Pandit Deendayal Energy University",
+                "date": "",
+                "link": "/"
+            }
+        ],
+        "sponsor": {
+            "1": {
+                "name": "PDEU",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f1/Pandit_Deendayal_Energy_University_logo.png/220px-Pandit_Deendayal_Energy_University_logo.png"
+            }
+        },
+        "hero": "https://raw.githubusercontent.com/gdscwow/Data-23/main/RegionImages/Frame%2030.svg"
+    },
+    {
+        "name": "West Bengal",
+        "homepage": "/[west-bengal]",
+        "where": {
+            "1": {
+                "where": "Ahmedabad - Gandhinagar",
+                "at": "PDEU - Pandit Deendayal Energy University",
+                "date": "",
+                "link": "/"
+            },
+            "2": {
+                "where": "Ahmedabad - Gandhinagar",
+                "at": "PDEU - Pandit Deendayal Energy University",
+                "date": "",
+                "link": "/"
+            }
+        },
+        "sponsor": {
+            "1": {
+                "name": "PDEU",
+                "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f1/Pandit_Deendayal_Energy_University_logo.png/220px-Pandit_Deendayal_Energy_University_logo.png"
+            }
+        },
+        "hero": "https://raw.githubusercontent.com/gdscwow/Data-23/main/RegionImages/Frame%2030.svg"
     }
 ]
