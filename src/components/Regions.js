@@ -6,6 +6,9 @@ export default function Regions() {
   const [permissions, setPermissions] = useState(false);
   const [shown, isShown] = useState(false);
   const [region, setRegion] = useState("");
+  const [homepage, setHomepage] = useState("");
+  const [where, setWhere] = useState("");
+  const [hero, setHero] = useState("");
   const inputRef = useRef(null);
   useEffect(() => {
     if (navigator.geolocation) {
@@ -20,9 +23,14 @@ export default function Regions() {
           fetch("/Data/regions.json")
             .then((res) => res.json())
             .then((datas) => {
+              console.log(datas);
               datas.forEach((item) => {
                 if (item.name === data.principalSubdivision) {
                   setRegion(item.name);
+                  setHomepage(item.homepage);
+                  setHero(item.hero);
+                  console.log(item.where);
+                  setWhere(JSON.stringify(item.where));
                 }
               });
             });
@@ -59,17 +67,26 @@ export default function Regions() {
             near you 😁
           </p>
           <div className="flex justify-center items-center gap-10 mt-36">
-            <Link href="/regions">
-              <div className="active:scale-95 transition-all flex flex-col justify-center items-center w-80 h-28 text-center select-none cursor-pointer rounded-3xl bg-pinkish">
-                <p className="text-3xl text-white">
+            <Link
+              href={{
+                pathname: homepage,
+                query: {
+                  region: region,
+                  hero: hero,
+                  where: where,
+                },
+              }}
+            >
+              <div className="custom-button-hover custom-button hover:scale-105 duration-500 hover:bg-deep transition-all flex flex-col justify-center items-center w-80 h-28 text-center select-none cursor-pointer rounded-3xl bg-pinkish">
+                <p className="text-3xl text-navyblue">
                   Take me to <br />
-                  {region}&apos; Page!
+                  {region}&apos;s Page!
                 </p>
               </div>
             </Link>
             <Link href="/regions">
-              <div className="active:scale-95 transition-all flex flex-col justify-center items-center w-80 h-28 text-center select-none cursor-pointer rounded-3xl bg-pinkish">
-                <p className="text-3xl text-white">
+              <div className="custom-button-hover custom-button transition-all hover:scale-105 duration-500 hover:bg-deep flex flex-col justify-center items-center w-80 h-28 text-center select-none cursor-pointer rounded-3xl bg-pinkish">
+                <p className="text-3xl text-navyblue">
                   View all <br />
                   Region&apos;s!
                 </p>

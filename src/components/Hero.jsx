@@ -1,9 +1,28 @@
 import Image from "next/image";
 import { Link, animateScroll as scroll } from "react-scroll";
+import { useEffect } from "react";
 
 export default function Hero() {
   return (
-    <div className="w-full h-screen flex justify-center items-center bg-home max-md:bg-center bg-cover">
+    <div className="w-full h-screen flex justify-center items-center max-md:bg-center bg-cover">
+      <Image
+        src="/Assets/Images/Hero/red.svg"
+        height={500}
+        width={500}
+        id="red"
+        className="absolute animate-slide-out-red transition-all duration-700"
+        alt="red"
+        loading="lazy"
+      />
+      <Image
+        src="/Assets/Images/Hero/yellow.svg"
+        height={500}
+        loading="lazy"
+        width={500}
+        id="yellow"
+        className="absolute animate-slide-out-yellow"
+        alt="yellow"
+      />
       <Image
         src="/Assets/Images/heronoo.svg"
         className="max-md:w-72 max-md:h-72"
