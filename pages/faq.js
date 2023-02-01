@@ -29,10 +29,16 @@ const Faq = () => {
                     <div
                       key={index}
                       onClick={(e) => {
-                        const content = e?.target?.parentElement?.children[1];
-                        content?.classList?.toggle("hidden");
-                        const icon = e?.target?.children[1];
-                        icon?.classList?.toggle("rotate-180");
+                        e.stopPropagation();
+                        const parent = e.target.parentElement;
+                        const answer = parent.children[1];
+                        console.log(answer);
+                        if (answer) {
+                          answer.classList.add("animate-fade-in"); 
+                          answer.classList.toggle("hidden");
+                          answer.innerHTML = item.answer;
+                          return;
+                        }
                       }}
                       className="w-full h-16 p-2 cursor-pointer border-b-2 border-blackish flex justify-between items-center"
                     >
@@ -45,11 +51,17 @@ const Faq = () => {
                       />
                     </div>
                     <div
+                      key={index}
+                      id="answer"
+                      className="transition-all w-full p-5 rounded-lg my-3 bg-slate-200 hidden"
+                    ></div>
+
+                    {/* <div
                       id="content"
                       className="w-full p-5 rounded-lg my-3 bg-slate-200 hidden"
                     >
                       {item.answer}
-                    </div>
+                    </div> */}
                   </div>
                 );
               })
