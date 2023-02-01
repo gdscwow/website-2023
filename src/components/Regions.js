@@ -54,11 +54,11 @@ export default function Regions() {
         <div className="flex flex-col justify-center items-center">
           <p
             data-aos="fade-up"
-            className="max-md:text-4xl font-GoogleSans flex text-6xl text-blackish text-semibold"
+            className="justify-center items-center gap-2 max-md:text-2xl font-GoogleSans flex text-6xl text-blackish text-semibold"
           >
             {region} have{" "}
             <Image
-              className="mr-3 ml-3 "
+              className=" max-md:h-16 max-md:w-16"
               src="Assets/Images/wow.svg"
               height={120}
               width={120}
@@ -66,7 +66,7 @@ export default function Regions() {
             />{" "}
             near you 😁
           </p>
-          <div className="flex justify-center items-center gap-10 mt-36">
+          <div className="flex max-md:flex-col justify-center items-center gap-10 mt-36">
             <Link
               href={{
                 pathname: homepage,

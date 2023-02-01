@@ -1,6 +1,7 @@
 import { AiFillCaretDown } from "react-icons/ai";
 import Navbar from "../src/components/faq/Navbar";
 import { useEffect, useState } from "react";
+import SEO from "../src/components/seo";
 
 const Faq = () => {
   const [data, setData] = useState([]);
@@ -12,9 +13,10 @@ const Faq = () => {
       .then((data) => setData(data));
   }, []);
   return (
-    <div className="select-none min-h-screen w-screen">
+    <div className="p-0 m-0 overflow-x-hidden select-none min-h-screen w-screen">
+      <SEO title="GDSC WoW | FAQ" />
       <Navbar />
-      <div className="h-screen w-screen flex flex-col p-40 justify-center items-start">
+      <div className="h-screen w-screen flex flex-col max-md:p-20 max-md:mt-20 p-40 justify-center items-start">
         <h1 className="text-6xl mt-36 text-blackish font-semibold text-start">
           Frequently asked questions <br />
           <p className="text-lg mt-3 text-start">
@@ -42,7 +44,7 @@ const Faq = () => {
                       }}
                       className="w-full h-16 p-2 cursor-pointer border-b-2 border-blackish flex justify-between items-center"
                     >
-                      <span className="text-2xl text-blackish font-semibold">
+                      <span className="max-md:text-xl text-2xl text-blackish font-semibold">
                         {item.question}
                       </span>
                       <AiFillCaretDown
