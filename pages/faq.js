@@ -1,7 +1,7 @@
 import { AiFillCaretDown } from "react-icons/ai";
 import Navbar from "../src/components/faq/Navbar";
 import { useEffect, useState } from "react";
-import SEO from "../src/components/seo";
+import SEO from "../src/components/SEO";
 
 const Faq = () => {
   const [data, setData] = useState([]);
